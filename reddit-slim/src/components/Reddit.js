@@ -1,10 +1,9 @@
 import React from "react"
-import Reddit from './Reddit'
 
-function List(){
+function Reddit(){
     return (
         <div>
-            <Reddit />
+            Reddit
         </div>
     )
 }
