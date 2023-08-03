@@ -1,5 +1,5 @@
 import React from "react"
-import Reddit from './Reddit'
+import Reddit from './Reddit/Reddit'
 
 export default function List({data}){
 

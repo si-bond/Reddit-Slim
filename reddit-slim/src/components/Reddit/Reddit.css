@@ -1,0 +1,24 @@
+.reddit-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    margin: 10px auto;
+}
+.reddit-left{
+    width: 10%;
+    /* border: 1px blue solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.reddit-right{
+    width: 90%;
+    /* border: 1px blue solid; */
+    padding: 20px;
+    background-color: white;
+}
