@@ -10,7 +10,15 @@ function App() {
 
 
   useEffect(() => {
-    fetch("url")    
+
+    const fetchData = async () => {
+      const response = await fetch('https://www.reddit.com/r/popular.json');
+      const json = await response.json();
+      setData(json.data.children);
+    }
+
+    fetchData()
+      .catch(console.error);
   }, [])
 
   return (
@@ -21,7 +29,7 @@ function App() {
         </p>
       </header>
       <main>
-        <List />
+        <List data={data} />
       </main>
     </div>
   );

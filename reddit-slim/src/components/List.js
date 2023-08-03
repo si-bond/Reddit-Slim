@@ -1,10 +1,25 @@
 import React from "react"
 import Reddit from './Reddit'
 
-function List(){
+export default function List({data}){
+
+    let reddits = "Loading data!"
+
+    if(data){
+
+        reddits = data.map(reddit => {
+            return (
+                <Reddit 
+                    data={reddit.data} 
+                />
+            )
+          })
+        console.log(data)
+    }
+
     return (
         <div>
-            <Reddit />
+            {reddits}
         </div>
     )
 }
