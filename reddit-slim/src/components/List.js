@@ -11,10 +11,10 @@ export default function List({data}){
             return (
                 <Reddit 
                     data={reddit.data} 
+                    key={reddit.data.id}
                 />
             )
           })
-        console.log(data)
     }
 
     return (

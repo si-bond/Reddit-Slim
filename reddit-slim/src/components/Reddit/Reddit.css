@@ -19,6 +19,30 @@
 .reddit-right{
     width: 90%;
     /* border: 1px blue solid; */
+    text-align: left;
     padding: 20px;
     background-color: white;
 }
+
+.reddit-top{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.thumbnail-img, .thumbnail-letter{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.thumbnail-letter{
+   background-color: #bdbdbd;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-weight: bold;
+}
+
+
