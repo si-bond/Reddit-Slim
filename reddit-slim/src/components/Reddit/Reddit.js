@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import "./Reddit.css"
 
 export default function Reddit({data}){
@@ -18,7 +19,7 @@ export default function Reddit({data}){
                     <p>Posted by {data.author}</p> 
                 </div>
                 
-                <h2>{data.title}</h2>
+                <h2><Link to={`post/${data.subreddit}/comments/${data.id}/${data.title}`}>{data.title}</Link></h2>
                 {data.url.includes(".jpg")&&<img src={data.url} height="400px"/>}
             </div>
             

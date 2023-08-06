@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react'
+import { Routes, Route } from "react-router-dom"
 import './App.css';
 import List from "./components/List"
 import Header from "./components/Header/Header"
+import Post from "./components/Post/Post"
 
 
 function App() {
@@ -44,7 +46,12 @@ function App() {
         />
       </header>
       <main>
-        {loaded?<List data={data} />:"Loading Data"}
+        <Routes>
+          <Route path="/" element={loaded?<List data={data} />:"Loading Data"}  />
+          <Route path="post/:subreddit/comments/:postId/:postTitle" element={ <Post data={data}/> } />
+          <Route path="contact" element={ <div>Contact</div>} />
+        </Routes>
+        
       </main>
     </div>
   );
