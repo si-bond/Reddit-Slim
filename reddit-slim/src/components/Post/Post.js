@@ -14,6 +14,8 @@ export default function Post(){
     const {postId} = useParams()
     const {postTitle} = useParams()
 
+ 
+
     const getPostData = async () => {
 
         setLoaded(false)
