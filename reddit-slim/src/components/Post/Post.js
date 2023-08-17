@@ -49,8 +49,8 @@ export default function Post(){
         </div>
       })
 
-      console.log(postData)
-      console.log(commentsData)
+     // console.log(postData)
+    //  console.log(commentsData)
       
 
     return (
